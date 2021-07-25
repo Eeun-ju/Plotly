@@ -14,11 +14,21 @@ Cufflinks는 Plotly를 pandas에서 보다 유연하게 시각화 할 수 있는
 ```{.python}
   pip install cufflinks
 ```
-## [Line Charts, Bar Charts]
+## [Line Charts, Bar Charts](BarChart&LineChart.ipynb)
 
 ```{.python}
   pandas_data.iplot(kind='bar')
   pandas_data.iplot(kind='line')
+```
+## [Scatter plot](Scatter.ipynb)
+
+```{.python}
+  fig = ex.scatter(df,x='x축',y= 'y축',color='색상',
+                 size='크기변화 변수', 
+                 hover_data=참고데이터,
+                 title = '그래프 이름')
+  fig.show()
+
 ```
 
 ## 지도 시각화
