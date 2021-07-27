@@ -30,14 +30,20 @@ Cufflinks는 Plotly를 pandas에서 보다 유연하게 시각화 할 수 있는
   fig.show()
 
 ```
-## [Pie Chart](Pie Chart.ipynb)
+## [Pie Chart](PieChart.ipynb)
 data : https://www.kaggle.com/sootersaalu/amazon-top-50-bestselling-books-2009-2019
 ```{.python}
   fig = px.pie(data,names = 'Genre',hover_data = ['User Rating'],title='Genre Pie Chart')
 
   fig = px.sunburst(data,path=['Genre','Year', ],values='Reviews') #path로 다중 속성 입력, 원 그래프 크기 values 속성으로 저장, reviews가 얼마나 되는지 확인하기
 ```
-## 지도 시각화
-참고 링크 : https://blog.daum.net/geoscience/1420
+## [지도 시각화](공간정보지도화.ipynb)
+data : https://blog.daum.net/geoscience/1420 AML_HOSP.xlsx
+```{.python}
+  fig = px.scatter_mapbox(data=데이터, lat=위도, lon=경도)
+  fig.update_layout(mapbox_style='open-street-map")
+  fig.show()
+```
+참고 링크 : https://github.com/osgeokr/dump/blob/master/1420_Pandas%EC%99%80_Plotly%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_%EA%B3%B5%EA%B0%84%EC%A0%95%EB%B3%B4_%EC%A7%80%EB%8F%84%ED%99%94.ipynb
 
 
