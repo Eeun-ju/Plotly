@@ -46,4 +46,13 @@ data : https://blog.daum.net/geoscience/1420 AML_HOSP.xlsx
 ```
 참고 링크 : https://github.com/osgeokr/dump/blob/master/1420_Pandas%EC%99%80_Plotly%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_%EA%B3%B5%EA%B0%84%EC%A0%95%EB%B3%B4_%EC%A7%80%EB%8F%84%ED%99%94.ipynb
 
+## [Gantt Chart](GanttChart.ipynb)
+간트차트(Gantt Chart)는 프로젝트 일정관리를 위한 bar 형태의 도구로 전체 일정을 한눈에 볼 수 있다.
+```{.python}
+  fig = px.timeline(data,x_start=시작날짜,x_end=끝날짜,y=일정,color='Task')
+  fig.show()
+  #figure_factory 사용
+  fig = ff.create_gantt(data, colors=컬러설정컬럼, index_col=보여주고싶은값, show_colorbar=True) # index_col : 바로 보이는 값으로 설정
+fig.show()
+```
 
