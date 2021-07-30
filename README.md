@@ -56,3 +56,14 @@ data : https://blog.daum.net/geoscience/1420 AML_HOSP.xlsx
 fig.show()
 ```
 
+# DASH(대시)
+
+## Dash란?
+Dash는 웹 분석 애플리케이션을 구축하기 위한 python framework으로 Python에서 데이터로 작업하는 사람들이 많이 사용한다. <br> Plotly와 Dash를 사용해보고 대시 보드를 구축해보자.
+
+### Dash 패키지 설치
+
+```{.python}
+  pip install dash
+  #pip install --user dash
+```
