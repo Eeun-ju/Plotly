@@ -61,9 +61,30 @@ fig.show()
 ## Dash란?
 Dash는 웹 분석 애플리케이션을 구축하기 위한 python framework으로 Python에서 데이터로 작업하는 사람들이 많이 사용한다. <br> Plotly와 Dash를 사용해보고 대시 보드를 구축해보자.
 
+## Jypyter-Dash란?
+Jupyter 환경내에서 대화식으로 Plotly Dash 앱을 쉽게 개발할 수 있는 라이브러리. Colab에서도 지원하기 때문에 쉽게 실습할 수 있다.
+
 ### Dash 패키지 설치
 
 ```{.python}
   pip install dash
   #pip install --user dash
+```
+### Jupyter-Dash 패키지 설치
+
+```{.python}
+  pip install jupyter-dash
+```
+### Jupyter-Dash 디스플레이 모드 
++ 외부 디스플레이 모드 <br><br> URL 클릭으로 새로운 브라우저 탭에서 애플리케이션을 여는 방법으로 애플리케이션이 정확히 어떻게 보이는지 보고 싶을 때 사용한다.
+```{.python}
+  app.run_server(mode='external')
+```
++ 내부 디스플레이 모드 <br><br> 노트북에 애플리케이션을 인라인으로 표시한다. 소규모 애플리케이션에서 빠르게 작용한다.
+```{.python}
+  app.run_server(mode='inline')
+```
++ JupyterLab 디스플레이 모드 <br><br> JupyterLab의 별도 탭에서 애플리케이션이 표시된다. 코드와 나란히 볼 수 있으므로 애플리케이션을 빠르게 반복하는 데 적합하다.
+```{.python}
+  app.run_server(mode='jupyterlab')
 ```
