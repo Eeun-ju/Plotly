@@ -88,3 +88,8 @@ Jupyter 환경내에서 대화식으로 Plotly Dash 앱을 쉽게 개발할 수 
 ```{.python}
   app.run_server(mode='jupyterlab')
 ```
+### [Jupyter dash inline example](DASH_tutorial.ipynb)
+<br>
+<center><img src="https://user-images.githubusercontent.com/76032774/127945812-c487440d-08a6-47a2-b7f6-93d040ab587d.png" width="900" height="500"></center>
+
+
